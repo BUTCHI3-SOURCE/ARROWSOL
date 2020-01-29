@@ -1,0 +1,29 @@
+{
+  "configs": [
+    "airindiaflights.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:airindiaflights:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.2.2",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "airindiaflights.xml",
+        "api/airindiaflights.raml",
+        "api/DATATYPES/AirindiaDataType.raml",
+        "api/DATATYPES/AirIndiaResponse.raml",
+        "api/EXAMPLES/AirindiaExample.raml",
+        "api/EXAMPLES/AirIndiaResponse.raml",
+        "log4j2.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

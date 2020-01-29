@@ -1,0 +1,35 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/db8ae7de-d795-41bf-9893-87a71d43d9e5/ # 
+title: AIRINDIAFLIGHTS
+
+types:
+  AirIndiaDataTyp: !include DATATYPES/AirindiaDataType.raml
+  AirIndiaResponseType: !include DATATYPES/AirIndiaResponse.raml
+
+/airIndiaFlights:
+  get:
+    queryParameters: 
+      from:
+      to:
+      depatureDate:
+    responses:
+      200:
+        body:
+          application/json:
+              type: AirIndiaDataTyp
+              example: !include EXAMPLES/AirIndiaResponse.raml
+                
+                
+                 
+                
+              
+                
+                
+                
+              
+                
+
+             
+
+           
+                 
